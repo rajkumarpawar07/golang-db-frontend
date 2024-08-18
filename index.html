@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GolangDB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-row">
+        <h1>GolangDB</h1>
+        <a href="http://localhost:3000/downloadDB" download>
+            <button type="button">Download Database</button>
+        </a>
+    </div>
+
+    <div id="forms-container">
+        <div class="section">
+            <h2>Create User</h2>
+            <form id="createUserForm">
+                <input type="text" id="name" placeholder="Name" required />
+                <input type="text" id="age" placeholder="Age" required />
+                <input type="text" id="contact" placeholder="Contact" required />
+                <input type="text" id="company" placeholder="Company" required />
+                <input type="text" id="city" placeholder="City" required />
+                <input type="text" id="state" placeholder="State" required />
+                <input type="text" id="country" placeholder="Country" required />
+                <input type="text" id="pincode" placeholder="Pincode" required />
+                <button type="submit">Create User</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Get User</h2>
+            <input type="text" id="getUserName" placeholder="Enter User Name" required />
+            <button id="getUserButton">Get User</button>
+            <pre id="getUserResult"></pre>
+        </div>
+
+        <div class="section">
+            <h2>Get All Users</h2>
+            <button id="getAllUsersButton">Get All Users</button>
+            <pre id="getAllUsersResult"></pre>
+        </div>
+
+        <div class="section">
+            <h2>Delete User</h2>
+            <input type="text" id="deleteUserName" placeholder="Enter User Name" required />
+            <button id="deleteUserButton">Delete User</button>
+        </div>
+
+        <div class="section">
+            <h2>Delete All Users</h2>
+            <button id="deleteAllUsersButton">Delete All Users</button>
+        </div>
+        <div class="section">
+            <h2>Download Database</h2>
+            <a href="http://localhost:3000/downloadDB" download>
+                <button type="button">Download Database</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
