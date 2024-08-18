@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000'; // Replace with your API base URL
+const baseUrl = 'https://golang-db-production.up.railway.app'; // Replace with your API base URL
 
 // Create User
 document.getElementById('createUserForm').addEventListener('submit', async (e) => {
